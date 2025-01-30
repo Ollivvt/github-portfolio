@@ -72,7 +72,7 @@ function Header() {
           ))}
           <li>
             <a
-              href="Olivia Tseng_250123.pdf"
+              href="CV_Olivia Tseng.pdf"
               className="bg-primary text-white px-4 py-2 rounded-lg shadow-md hover:bg-secondary transition"
               target="_blank"
               rel="noopener noreferrer"
@@ -275,21 +275,21 @@ function Skills() {
 function Experience() {
   const experienceList = [
     {
-      position: "AI Data Trainer",
-      company: "Outlier",
-      date: "OCT 2024 – Present",
-      details: [
-        "Improved AI-generated code quality by providing feedback and testing models.",
-        "Completed 5+ Python-based projects to evaluate and improve coding tasks for generative AI systems.",
-      ],
-    },
-    {
       position: "Machine Learning Intern",
       company: "BC Cancer",
       date: "SEP 2023 – Present",
       details: [
         "Conducted AI bias analysis on 2.5M+ images.",
         "Developed 3+ deep learning models for ethnic feature recognition with Grad-CAM transparency.",
+      ],
+    },
+    {
+      position: "AI Data Trainer",
+      company: "Outlier",
+      date: "OCT 2024 – JAN 2025",
+      details: [
+        "Improved AI-generated code quality by providing feedback and testing models.",
+        "Completed 5+ Python-based projects to evaluate and improve coding tasks for generative AI systems.",
       ],
     },
     {
