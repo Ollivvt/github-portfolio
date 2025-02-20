@@ -72,7 +72,7 @@ function Header() {
           ))}
           <li>
             <a
-              href="CV_Olivia Tseng.pdf"
+              href="Olivia Tseng.pdf"
               className="bg-primary text-white px-4 py-2 rounded-lg shadow-md hover:bg-secondary transition"
               target="_blank"
               rel="noopener noreferrer"
@@ -215,7 +215,7 @@ function Skills() {
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
         <div className="bg-white shadow-lg rounded-lg p-6">
           <h3 className="text-xl font-bold text-primary flex items-center mb-4">
-            <CodeBracketIcon className="h-6 w-6 mr-2" /> Programming Languages
+            <CodeBracketIcon className="h-6 w-6 mr-2" /> Programming & Scripting
           </h3>
           <ul className="list-disc text-gray-700 text-sm space-y-2">
             <li>Python</li>
@@ -224,38 +224,45 @@ function Skills() {
             <li>C#</li>
             <li>JavaScript</li>
             <li>SQL</li>
+            <li>MATLAB</li>
           </ul>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-6">
           <h3 className="text-xl font-bold text-primary flex items-center mb-4">
-            <CogIcon className="h-6 w-6 mr-2" /> Frameworks & Libraries
+            <WrenchIcon className="h-6 w-6 mr-2" /> Software Development
           </h3>
           <ul className="list-disc text-gray-700 text-sm space-y-2">
-            <li>TensorFlow, PyTorch</li>
-            <li>Scikit-learn, NumPy</li>
-            <li>Keras, OpenCV</li>
-            <li>React, D3.js</li>
-            <li>RPA Tools</li>
+            <li>Object-Oriented Programming (OOP)</li>
+            <li>REST APIs</li>
+            <li>Software Development Life Cycle (SDLC)</li>
+            <li>Agile Development</li>
+            <li>Testing and Debugging</li>
+            <li>React, Node.js</li>
           </ul>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-6">
           <h3 className="text-xl font-bold text-primary flex items-center mb-4">
-            <CloudIcon className="h-6 w-6 mr-2" /> Cloud & Platforms
+            <CogIcon className="h-6 w-6 mr-2" /> Machine Learning & Data Science
           </h3>
           <ul className="list-disc text-gray-700 text-sm space-y-2">
-            <li>AWS</li>
-            <li>Azure</li>
-            <li>Linux, Unix</li>
+            <li>TensorFlow, OpenCV</li>
+            <li>PyTorch, Keras</li>
+            <li>Scikit-learn</li>
+            <li>Deep Learning</li>
+            <li>Computer Vision</li>
+            <li>Model Training & Evaluation</li>
           </ul>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-6">
           <h3 className="text-xl font-bold text-primary flex items-center mb-4">
-            <WrenchIcon className="h-6 w-6 mr-2" /> Tools & Development
+            <CloudIcon className="h-6 w-6 mr-2" /> Cloud & DevOps
           </h3>
           <ul className="list-disc text-gray-700 text-sm space-y-2">
+            <li>AWS, Azure</li>
             <li>Git, GitHub</li>
-            <li>Docker</li>
-            <li>Unity</li>
+            <li>Linux, Unix</li>
+            <li>CI/CD Pipelines</li>
+            <li>Docker, Unity</li>
           </ul>
         </div>
         <div className="bg-white shadow-lg rounded-lg p-6">
@@ -297,8 +304,8 @@ function Experience() {
       company: "UBC",
       date: "SEP 2024 – DEC 2024",
       details: [
-        "Led Java programming labs for 30+ students, helping them develop problem-solving skills.",
-        "Mentored students on research-based projects to enhance their academic development.",
+        "Led Java programming labs on OOP, data structures, and algorithms for 30+ students.",
+        "Assisted in debugging, grading, and refining Java-based coding assignments.",
       ],
     },
     {
