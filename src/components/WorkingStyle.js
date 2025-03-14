@@ -27,7 +27,7 @@ function WorkingStyle() {
   ];
 
   return (
-    <section id="workingstyle" className="bg-white dark:bg-gray-900 py-20">
+    <section id="workingstyle" className="py-20 bg-gray-100 dark:bg-gray-700">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-primary dark:text-white mb-2" data-aos="fade-up">
           Working Style & Personality
@@ -60,7 +60,7 @@ function WorkingStyle() {
         {/* Working approach description */}
         <div className="mt-16 bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-md" data-aos="fade-up">
           <h3 className="text-2xl font-bold text-primary dark:text-white mb-4">My Approach</h3>
-          <div className="prose dark:prose-invert max-w-none">
+          <div className="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300">
             <p className="mb-4">
               I believe in a user-centered approach to software development, focusing on creating solutions that are not just technically sound but also intuitive and accessible. My work is guided by the principle that the best technology serves human needs rather than the other way around.
             </p>

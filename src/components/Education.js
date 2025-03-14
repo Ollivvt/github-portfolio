@@ -9,7 +9,7 @@ function Education() {
         degree: "Master's Degree in Computer Science",
         date: "SEP 2023 – JUN 2025",
         details: [
-          "GPA: 3.75",
+          "GPA: 3.8",
           "Scholarship: UBC Okanagan Graduate Research Scholarships",
           "Key Modules: Advanced Algorithms, Applied Machine Learning, Computer Vision, Computer Graphics, HCI, Unity",
         ],
@@ -29,7 +29,7 @@ function Education() {
     ];
   
     return (
-      <section id="education" className="bg-gray-50 dark:bg-gray-900 py-20">
+      <section id="education" className="py-20 bg-gray-50 dark:bg-gray-700">
         <h2 className="text-4xl font-bold text-center text-primary dark:text-white mb-10" data-aos="fade-up">Education</h2>
         <div className="max-w-5xl mx-auto space-y-16 px-6">
           {educationList.map((edu, index) => (
@@ -52,7 +52,7 @@ function Education() {
                   whileInView={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: (index * 0.2) + 0.2, type: "spring" }}
                 >
-                  <CalendarIcon className="h-6 w-6" />
+                  <CalendarIcon className="h-6 w-6 text-white dark:text-gray-900" />
                 </motion.div>
                 
                 <motion.div

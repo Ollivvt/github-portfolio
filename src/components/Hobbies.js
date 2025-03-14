@@ -26,7 +26,7 @@ function Hobbies() {
   ];
 
   return (
-    <section id="hobbies" className="bg-gray-100 dark:bg-gray-800 py-20">
+    <section id="hobbies" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-primary dark:text-white mb-2" data-aos="fade-up">
           Hobbies & Interests

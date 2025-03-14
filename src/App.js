@@ -5,11 +5,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Header from './components/Header';
 import Home from './components/Home';
-import Experience from './components/Experience';
 import Education from './components/Education';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
 import Skills from './components/Skills';
 import WorkingStyle from './components/WorkingStyle';
-import Projects from './components/Projects';
 import Extracurricular from './components/Extracurricular';
 import Hobbies from './components/Hobbies';
 import Contact from './components/Contact';
@@ -39,11 +39,11 @@ function App() {
     <div className={`app ${darkMode ? 'dark' : ''}`}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Home />
-      <Experience />
       <Education />
+      <Experience />
+      <Projects />
       <Skills />
       <WorkingStyle />
-      <Projects />
       <Extracurricular />
       <Hobbies />
       <Contact />

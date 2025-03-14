@@ -37,7 +37,7 @@ function Skills() {
   ];
 
   return (
-    <section id="skills" className="bg-gray-200 dark:bg-gray-800 py-20">
+    <section id="skills" className="py-20 bg-white dark:bg-gray-900">
       <h2 className="text-4xl font-bold text-center text-primary dark:text-white mb-10" data-aos="fade-up">Skills</h2>
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
         {skillCategories.map((category, index) => (
