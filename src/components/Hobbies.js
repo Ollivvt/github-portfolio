@@ -1,26 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from '../hooks/useTranslation';
 
 function Hobbies() {
+  const { t } = useTranslation();
   const hobbies = [
     {
-      title: "Snowboarding",
-      description: "Carving down the slopes in British Columbia during the winter season.",
+      title: t('snowboardingTitle'),
+      description: t('snowboardingDesc'),
       icon: "🏂",
     },
     {
-      title: "Travel",
-      description: "Exploring new cultures, cuisines, and landscapes around the world.",
+      title: t('travelTitle'),
+      description: t('travelDesc'),
       icon: "✈️",
     },
     {
-      title: "Photography",
-      description: "Capturing urban landscapes, nature scenes, and travel moments.",
+      title: t('photographyTitle'),
+      description: t('photographyDesc'),
       icon: "📷",
     },
     {
-      title: "Playing Piano",
-      description: "Unwinding by playing classical pieces and learning new songs.",
+      title: t('pianoTitle'),
+      description: t('pianoDesc'),
       icon: "🎹",
     },
   ];
@@ -29,10 +31,10 @@ function Hobbies() {
     <section id="hobbies" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-primary dark:text-white mb-2" data-aos="fade-up">
-          Hobbies & Interests
+          {t('hobbiesTitle')}
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 text-center mb-10 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-          Beyond coding and academics, here are some activities that keep me inspired and balanced.
+          {t('hobbiesSubtitle')}
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

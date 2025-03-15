@@ -1,38 +1,40 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaTrophy, FaUsers, FaCog, FaChartLine, FaStar } from 'react-icons/fa';
+import { FaTrophy, FaUsers, FaCog, FaChartLine, FaStar, FaLightbulb, FaHandshake, FaPresentation, FaCode, FaClock, FaChartBar, FaUserFriends, FaTasks, FaChartPie } from 'react-icons/fa';
+import { useTranslation } from '../hooks/useTranslation';
 
 function Extracurricular() {
+  const { t } = useTranslation();
   const activities = [
     {
-      title: "National Digital Humanities Big Data Competition",
+      title: t('digitalHumanitiesTitle'),
       bulletPoints: [
-        { icon: FaTrophy, text: "Achieved Top 12 placement among 100+ competing teams" },
-        { icon: FaCog, text: "Led system architecture design and proposal development" },
-        { icon: FaUsers, text: "Collaborated with cross-functional team for presentation" }
+        { icon: FaTrophy, text: t('digitalHumanitiesPoints')[0] },
+        { icon: FaCog, text: t('digitalHumanitiesPoints')[1] },
+        { icon: FaHandshake, text: t('digitalHumanitiesPoints')[2] }
       ],
       image: "images/competition.jpg",
-      achievements: ["Top 12 Finalist", "System Architecture Design", "Technical Proposal Lead"]
+      achievements: t('digitalHumanitiesAchievements')
     },
     {
-      title: "Microsoft Intern Program (2022 Coding Angels)",
+      title: t('microsoftTitle'),
       bulletPoints: [
-        { icon: FaUsers, text: "Spearheaded development team of 4 engineers" },
-        { icon: FaStar, text: "Achieved 95% accuracy in facial detection" },
-        { icon: FaChartLine, text: "Reduced processing time by 40%" }
+        { icon: FaUsers, text: t('microsoftPoints')[0] },
+        { icon: FaChartLine, text: t('microsoftPoints')[1] },
+        { icon: FaClock, text: t('microsoftPoints')[2] }
       ],
       image: "images/microsoft.jpg",
-      achievements: ["Team Lead", "Face API Integration", "Performance Optimization"]
+      achievements: t('microsoftAchievements')
     },
     {
-      title: "CCU Career Fair 2021",
+      title: t('ccuCareerTitle'),
       bulletPoints: [
-        { icon: FaCog, text: "Coordinated 5 major networking events for 500+ students" },
-        { icon: FaUsers, text: "Managed diverse team of 9 members" },
-        { icon: FaChartLine, text: "Increased student participation by 30%" }
+        { icon: FaUserFriends, text: t('ccuCareerPoints')[0] },
+        { icon: FaTasks, text: t('ccuCareerPoints')[1] },
+        { icon: FaChartPie, text: t('ccuCareerPoints')[2] }
       ],
       image: "images/careerfair.jpg",
-      achievements: ["Event Management", "Team Leadership", "Increased Engagement"]
+      achievements: t('ccuCareerAchievements')
     }
   ];
 
@@ -40,10 +42,10 @@ function Extracurricular() {
     <section id="extracurricular" className="py-24 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-center text-primary dark:text-white mb-4" data-aos="fade-up">
-          Extracurricular Activities
+          {t('extracurricularTitle')}
         </h2>
         <p className="text-xl text-gray-600 dark:text-gray-300 text-center mb-16 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-          Engaging in impactful activities that demonstrate leadership, technical expertise, and collaborative success
+          {t('extracurricularSubtitle')}
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

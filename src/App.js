@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { LanguageProvider } from './context/LanguageContext';
 import Header from './components/Header';
 import Home from './components/Home';
 import Education from './components/Education';
@@ -36,19 +37,21 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className={`app ${darkMode ? 'dark' : ''}`}>
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Home />
-      <Education />
-      <Experience />
-      <Projects />
-      <Skills />
-      <WorkingStyle />
-      <Extracurricular />
-      <Hobbies />
-      <Contact />
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className={`app ${darkMode ? 'dark' : ''}`}>
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Home />
+        <Education />
+        <Experience />
+        <Projects />
+        <Skills />
+        <WorkingStyle />
+        <Extracurricular />
+        <Hobbies />
+        <Contact />
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 

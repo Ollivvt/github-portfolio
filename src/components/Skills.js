@@ -1,44 +1,46 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CodeBracketIcon, WrenchIcon, CogIcon, CloudIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
+import { useTranslation } from '../hooks/useTranslation';
 
 function Skills() {
+  const { t } = useTranslation();
   const skillCategories = [
     {
-      title: "Programming & Scripting",
+      title: t('programmingTitle'),
       icon: <CodeBracketIcon className="h-6 w-6 mr-2" />,
-      skills: ["Python", "Java", "C", "C#", "JavaScript", "SQL", "MATLAB"],
+      skills: t('programmingSkills'),
       color: "bg-blue-500"
     },
     {
-      title: "Software Development",
+      title: t('developmentTitle'),
       icon: <WrenchIcon className="h-6 w-6 mr-2" />,
-      skills: ["Object-Oriented Programming (OOP)", "REST APIs", "Software Development Life Cycle (SDLC)", "Agile Development", "Testing and Debugging", "React, Node.js"],
+      skills: t('developmentSkills'),
       color: "bg-purple-500"
     },
     {
-      title: "Machine Learning & Data Science",
-      icon: <CogIcon className="h-6 w-6 mr-2" />,
-      skills: ["TensorFlow, OpenCV", "PyTorch, Keras", "Scikit-learn", "Deep Learning", "Computer Vision", "Model Training & Evaluation"],
+      title: t('aiTitle'),
+      icon: <CogIcon className="h-9 w-9 mr-2" />,
+      skills: t('aiSkills'),
       color: "bg-green-500"
     },
     {
-      title: "Cloud & DevOps",
+      title: t('cloudTitle'),
       icon: <CloudIcon className="h-6 w-6 mr-2" />,
-      skills: ["AWS, Azure", "Git, GitHub", "Linux, Unix", "CI/CD Pipelines", "Docker, Unity"],
+      skills: t('cloudSkills'),
       color: "bg-yellow-500"
     },
     {
-      title: "Languages",
+      title: t('languagesTitle'),
       icon: <GlobeAltIcon className="h-6 w-6 mr-2" />,
-      skills: ["Mandarin (Native)", "English (Highly Proficient)"],
+      skills: t('languagesSkills'),
       color: "bg-red-500"
     }
   ];
 
   return (
     <section id="skills" className="py-20 bg-white dark:bg-gray-900">
-      <h2 className="text-4xl font-bold text-center text-primary dark:text-white mb-10" data-aos="fade-up">Skills</h2>
+      <h2 className="text-4xl font-bold text-center text-primary dark:text-white mb-10" data-aos="fade-up">{t('skillsTitle')}</h2>
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
         {skillCategories.map((category, index) => (
           <motion.div

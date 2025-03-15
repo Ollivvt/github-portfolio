@@ -1,44 +1,34 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { CodeBracketIcon, ChartBarIcon, CloudIcon, CommandLineIcon, CpuChipIcon, BeakerIcon } from '@heroicons/react/24/outline';
+import { useTranslation } from '../hooks/useTranslation';
 
 function Projects() {
+  const { t } = useTranslation();
   const projectList = [
     {
-      title: "AI Ethnicity in Medical Images",
-      description: "Developed sophisticated machine learning models to analyze racial features in medical imaging datasets, enhancing healthcare equity research.",
-      details: [
-        "Implemented and fine-tuned EfficientNet and DinoV2 models for high-accuracy feature detection",
-        "Deployed scalable solution on AWS using EC2 instances and S3 storage",
-        "Processed and analyzed over 550K medical images with 94% accuracy"
-      ],
+      title: t('aiEthnicityTitle'),
+      description: t('aiEthnicityDesc'),
+      details: t('aiEthnicityDetails'),
       link: "https://github.com/Ollivvt/AI-ethnicity-med-image",
       tags: ["Python", "PyTorch", "AWS", "EfficientNet", "DinoV2"],
       icon: <CpuChipIcon className="h-6 w-6" />,
       color: "from-blue-500 to-indigo-600"
     },
     {
-      title: "Tourism Data Visualization Platform",
-      description: "Created an end-to-end data pipeline and interactive visualization platform for large-scale tourism data analysis.",
-      details: [
-        "Built robust data pipeline using Python and Apache Spark for efficient processing",
-        "Designed interactive dashboards with D3.js for intuitive data exploration",
-        "Implemented real-time filtering and dynamic visualization updates"
-      ],
+      title: t('tourismTitle'),
+      description: t('tourismDesc'),
+      details: t('tourismDetails'),
       link: "https://github.com/martin0310/Travel_Vision",
       tags: ["D3.js", "Apache Spark", "Python", "Data Pipeline", "Visualization"],
       icon: <ChartBarIcon className="h-6 w-6" />,
       color: "from-green-500 to-teal-600"
     },
     {
-      title: "Web-Based Ordering System",
-      description: "Full-stack ordering platform with real-time tracking and administrative capabilities.",
-      details: [
-        "Developed responsive frontend using modern JavaScript and CSS frameworks",
-        "Implemented optimized MySQL queries, achieving 40% faster processing time",
-        "Built comprehensive admin dashboard for order management and analytics"
-      ],
-      link: "#",
+      title: t('orderingTitle'),
+      description: t('orderingDesc'),
+      details: t('orderingDetails'),
+      link: "https://github.com/Ollivvt/web-design-database",
       tags: ["JavaScript", "PHP", "MySQL", "HTML/CSS", "Full Stack"],
       icon: <CodeBracketIcon className="h-6 w-6" />,
       color: "from-purple-500 to-pink-600"
@@ -52,11 +42,8 @@ function Projects() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-center text-primary dark:text-white mb-10" data-aos="fade-up">
-            Featured Projects
-          </h2>
-          <p className="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-            Showcasing my technical expertise through real-world applications and innovative solutions
-          </p>
+            {t('projectsTitle')}
+          </h2> 
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -122,7 +109,7 @@ function Projects() {
                   whileHover={{ x: 5 }}
                   transition={{ duration: 0.2 }}
                 >
-                  View Project
+                  {t('viewProject')}
                   <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>

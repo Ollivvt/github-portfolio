@@ -1,26 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { EnvelopeIcon, PhoneIcon, LinkIcon } from '@heroicons/react/24/outline';
+import { useTranslation } from '../hooks/useTranslation';
 
 function Contact() {
+  const { t } = useTranslation();
   const contactMethods = [
     {
       icon: <EnvelopeIcon className="h-6 w-6 text-accent" />,
-      label: "Email",
+      label: t('emailLabel'),
       value: "yutingtseng0203@gmail.com",
       href: "mailto:yutingtseng0203@gmail.com",
       isLink: true
     },
     {
       icon: <PhoneIcon className="h-6 w-6 text-accent" />,
-      label: "Phone",
+      label: t('phoneLabel'),
       value: "+12363383149",
       href: "tel:+12363383149",
       isLink: true
     },
     {
       icon: <LinkIcon className="h-6 w-6 text-accent" />,
-      label: "LinkedIn",
+      label: t('linkedinLabel'),
       value: "Olivia Tseng",
       href: "https://www.linkedin.com/in/olivia-tseng-yuting/",
       isLink: true
@@ -30,9 +32,9 @@ function Contact() {
   return (
     <section id="contact" className="bg-primary dark:bg-gray-900 text-white py-20 px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4" data-aos="fade-up">Contact</h2>
+        <h2 className="text-4xl font-bold text-center mb-4" data-aos="fade-up">{t('contactTitle')}</h2>
         <p className="text-center text-lg opacity-90 mb-10 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-          Let's connect! Feel free to reach out for collaborations, opportunities, or just to say hello.
+          {t('contactSubtitle')}
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -76,10 +78,9 @@ function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <h3 className="text-2xl font-bold mb-4">Let's Work Together</h3>
+          <h3 className="text-2xl font-bold mb-4">{t('workTogetherTitle')}</h3>
           <p className="mb-6">
-            I'm currently open to new opportunities and collaborations in software development, 
-            AI, and machine learning projects.
+            {t('workTogetherDesc')}
           </p>
         </motion.div>
       </div>

@@ -1,38 +1,40 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BriefcaseIcon, CalendarIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import { useTranslation } from '../hooks/useTranslation';
 
 function Experience() {
+    const { t } = useTranslation();
     const experienceList = [
         {
-            position: "Software Developer - AI Data Trainer",
-            company: "Outlier",
+            position: t('outlierPosition'),
+            company: t('outlierCompany'),
             date: "OCT 2024 – Present",
-            location: "Remote",
-            type: "Part-time",
+            location: t('remote'),
+            type: t('partTime'),
             current: true
         },
         {
-            position: "Machine Learning Intern",
-            company: "BC Cancer",
+            position: t('bcCancerPosition'),
+            company: t('bcCancerCompany'),
             date: "SEP 2023 – Present",
-            location: "Kelowna, BC, Canada",
-            type: "Internship",
+            location: t('kelownaLocation'),
+            type: t('internship'),
             current: true
         },
         {
-            position: "System Development Intern",
-            company: "MIRDC Taiwan",
+            position: t('mirdcPosition'),
+            company: t('mirdcCompany'),
             date: "JUL 2021 – DEC 2021",
-            location: "Kaohsiung, Taiwan",
-            type: "Internship"
+            location: t('kaohsiungLocation'),
+            type: t('internship')
         },
         {
-            position: "Software Development Intern",
-            company: "Coretronic Co.",
+            position: t('coretronicPosition'),
+            company: t('coretronicCompany'),
             date: "JUL 2021 – AUG 2021",
-            location: "Hsinchu, Taiwan",
-            type: "Internship"
+            location: t('hsinchuLocation'),
+            type: t('internship')
         }
     ];
 
@@ -41,7 +43,7 @@ function Experience() {
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold text-center text-primary dark:text-white mb-10" data-aos="fade-up">
-                        Experience
+                        {t('experienceTitle')}
                     </h2>
                 </div>
 
@@ -77,7 +79,7 @@ function Experience() {
                                     >
                                         {exp.current && (
                                             <div className="absolute -top-3 left-4 bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
-                                                Current Position
+                                                {t('currentPosition')}
                                             </div>
                                         )}
                                         

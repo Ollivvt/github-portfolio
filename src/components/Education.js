@@ -1,28 +1,28 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CalendarIcon } from '@heroicons/react/24/outline';
+import { useTranslation } from '../hooks/useTranslation';
 
 function Education() {
+    const { t } = useTranslation();
     const educationList = [
       {
-        school: "The University of British Columbia (UBC)",
-        degree: "Master's Degree in Computer Science",
+        school: t('ubcName'),
+        degree: t('ubcDegree'),
         date: "SEP 2023 – JUN 2025",
         details: [
-          "GPA: 3.8",
-          "Scholarship: UBC Okanagan Graduate Research Scholarships",
-          "Key Modules: Advanced Algorithms, Applied Machine Learning, Computer Vision, Computer Graphics, HCI, Unity",
+          t('ubcScholarship'),
+          t('ubcModules'),
         ],
         logo: "images/ubc_logo.png",
       },
       {
-        school: "National Chung Cheng University (CCU)",
-        degree: "Bachelor's Degree in Information Management",
+        school: t('ccuName'),
+        degree: t('ccuDegree'),
         date: "SEP 2019 – JUN 2023",
         details: [
-          "GPA: 3.87",
-          "Awards: Fall 2022 Dean's List, 1st Place in CCU Global Elite Program",
-          "Key Modules: Data Structures, SQL Database, System Analysis & Design, Computer Networks, Web App Development",
+          t('ccuAwards'),
+          t('ccuModules'),
         ],
         logo: "images/ccu_logo.png",
       },
@@ -30,7 +30,7 @@ function Education() {
   
     return (
       <section id="education" className="py-20 bg-gray-50 dark:bg-gray-700">
-        <h2 className="text-4xl font-bold text-center text-primary dark:text-white mb-10" data-aos="fade-up">Education</h2>
+        <h2 className="text-4xl font-bold text-center text-primary dark:text-white mb-10" data-aos="fade-up">{t('educationTitle')}</h2>
         <div className="max-w-5xl mx-auto space-y-16 px-6">
           {educationList.map((edu, index) => (
             <motion.div

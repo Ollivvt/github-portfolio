@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ReactTyped } from "react-typed";
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { useTranslation } from '../hooks/useTranslation';
 
 function Home() {
   const [isVisible, setIsVisible] = useState(true);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const { t } = useTranslation();
 
   useEffect(() => {
     setIsVisible(true);
@@ -63,7 +65,7 @@ function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="text-sm font-medium">Welcome to my portfolio</span>
+              <span className="text-sm font-medium">{t('welcome')}</span>
             </motion.div>
 
             <motion.h1 
@@ -72,9 +74,9 @@ function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              Building{' '}
+              {t('building')}{' '}
               <span className="relative inline-block">
-                Reliable
+                {t('reliable')}
                 <motion.span 
                   className="absolute -bottom-2 left-0 w-full h-1 bg-blue-400"
                   initial={{ width: 0 }}
@@ -82,7 +84,7 @@ function Home() {
                   transition={{ delay: 1, duration: 0.8 }}
                 />
               </span>
-              {' '}Software Solutions
+              {' '}{t('softwareSolutions')}
             </motion.h1>
 
             <motion.div
@@ -94,10 +96,10 @@ function Home() {
               <h2 className="text-3xl font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 <ReactTyped
                   strings={[
-                    "Hi, I'm Olivia Tseng!",
-                    "Recent CS Graduate",
-                    "ML Enthusiast",
-                    "Eager to Learn & Grow"
+                    t('typedGreeting'),
+                    t('typedGraduate'),
+                    t('typedML'),
+                    t('typedEager')
                   ]}
                   typeSpeed={50}
                   backSpeed={30}
@@ -112,10 +114,7 @@ function Home() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.6 }}
             >
-              A fresh Master's graduate in <span className="text-blue-400 font-medium">Computer Science</span> at UBC, 
-              with a strong foundation in <span className="text-purple-400 font-medium">Software Development</span> and{' '}
-              <span className="text-teal-400 font-medium">AI / Machine Learning</span>. 
-              Excited to apply my academic knowledge to real-world challenges and grow as a professional.
+              {t('introText')}
             </motion.p>
 
             <motion.div 
@@ -130,7 +129,7 @@ function Home() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Let's Connect
+                {t('letsConnect')}
               </motion.a>
               <motion.a
                 href="#projects"
@@ -138,7 +137,7 @@ function Home() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                View Projects
+                {t('viewProjects')}
               </motion.a>
             </motion.div>
 
@@ -168,20 +167,20 @@ function Home() {
               <div className="relative bg-white/10 backdrop-blur-lg p-8 rounded-2xl border border-white/10">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="p-4 bg-white/5 rounded-lg">
-                    <h3 className="font-medium mb-1">Education</h3>
-                    <p className="text-sm text-gray-300">Master's in CS</p>
+                    <h3 className="font-medium mb-1">{t('education')}</h3>
+                    <p className="text-sm text-gray-300">{t('mastersInCS')}</p>
                   </div>
                   <div className="p-4 bg-white/5 rounded-lg">
-                    <h3 className="font-medium mb-1">Academic Projects</h3>
-                    <p className="text-sm text-gray-300">5+ Completed</p>
+                    <h3 className="font-medium mb-1">{t('academicProjects')}</h3>
+                    <p className="text-sm text-gray-300">{t('projectsCompleted')}</p>
                   </div>
                   <div className="p-4 bg-white/5 rounded-lg">
-                    <h3 className="font-medium mb-1">Skills</h3>
-                    <p className="text-sm text-gray-300">OOP / AWS / CI/CD / ML</p>
+                    <h3 className="font-medium mb-1">{t('skills')}</h3>
+                    <p className="text-sm text-gray-300">{t('skillsList')}</p>
                   </div>
                   <div className="p-4 bg-white/5 rounded-lg">
-                    <h3 className="font-medium mb-1">Languages</h3>
-                    <p className="text-sm text-gray-300">Python / Java / C</p>
+                    <h3 className="font-medium mb-1">{t('programmingLanguages')}</h3>
+                    <p className="text-sm text-gray-300">{t('languagesList')}</p>
                   </div>
                 </div>
               </div>
@@ -195,8 +194,8 @@ function Home() {
           animate={{ opacity: 1, y: [0, 10, 0] }}
           transition={{ delay: 1.5, duration: 1.5, repeat: Infinity }}
         >
-          <a href="#experience" className="flex flex-col items-center text-sm text-gray-400 hover:text-white transition-colors">
-            <span className="mb-2">Scroll to explore</span>
+          <a href="#education" className="flex flex-col items-center text-sm text-gray-400 hover:text-white transition-colors">
+            <span className="mb-2">{t('scrollToExplore')}</span>
             <svg 
               className="w-5 h-5" 
               fill="none" 

@@ -1,27 +1,29 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CogIcon, StarIcon, UserIcon, HeartIcon } from '@heroicons/react/24/outline';
+import { useTranslation } from '../hooks/useTranslation';
 
 function WorkingStyle() {
+  const { t } = useTranslation();
   const traits = [
     {
-      title: "Problem Solver",
-      description: "I approach challenges analytically, breaking them down into manageable steps.",
+      title: t('problemSolverTitle'),
+      description: t('problemSolverDesc'),
       icon: <CogIcon className="h-12 w-12 text-accent" />,
     },
     {
-      title: "Detail-Oriented",
-      description: "I pay close attention to details while keeping the big picture in mind.",
+      title: t('detailOrientedTitle'),
+      description: t('detailOrientedDesc'),
       icon: <StarIcon className="h-12 w-12 text-accent" />,
     },
     {
-      title: "Collaborative",
-      description: "I thrive in team environments, valuing diverse perspectives and contributions.",
+      title: t('collaborativeTitle'),
+      description: t('collaborativeDesc'),
       icon: <UserIcon className="h-12 w-12 text-accent" />,
     },
     {
-      title: "Continuous Learner",
-      description: "I'm passionate about staying current with emerging technologies and practices.",
+      title: t('continuousLearnerTitle'),
+      description: t('continuousLearnerDesc'),
       icon: <HeartIcon className="h-12 w-12 text-accent" />,
     },
   ];
@@ -30,10 +32,10 @@ function WorkingStyle() {
     <section id="workingstyle" className="py-20 bg-gray-100 dark:bg-gray-700">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-primary dark:text-white mb-2" data-aos="fade-up">
-          Working Style & Personality
+          {t('workingStyleTitle')}
         </h2>
         <p className="text-lg text-gray-600 dark:text-gray-300 text-center mb-10 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-          Understanding how I approach work and collaborate with teams
+          {t('workingStyleSubtitle')}
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -59,16 +61,16 @@ function WorkingStyle() {
         
         {/* Working approach description */}
         <div className="mt-16 bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-md" data-aos="fade-up">
-          <h3 className="text-2xl font-bold text-primary dark:text-white mb-4">My Approach</h3>
+          <h3 className="text-2xl font-bold text-primary dark:text-white mb-4">{t('approachTitle')}</h3>
           <div className="prose dark:prose-invert max-w-none text-gray-700 dark:text-gray-300">
             <p className="mb-4">
-              I believe in a user-centered approach to software development, focusing on creating solutions that are not just technically sound but also intuitive and accessible. My work is guided by the principle that the best technology serves human needs rather than the other way around.
+              {t('approachDesc1')}
             </p>
             <p className="mb-4">
-              When faced with complex problems, I methodically analyze requirements, research potential solutions, and iteratively implement and test my code. I value clean, maintainable code and thorough documentation.
+              {t('approachDesc2')}
             </p>
             <p>
-              In team settings, I'm both a supportive collaborator and a proactive leader when needed. I communicate clearly, meet deadlines consistently, and remain adaptable in the face of changing requirements or unexpected challenges.
+              {t('approachDesc3')}
             </p>
           </div>
         </div>

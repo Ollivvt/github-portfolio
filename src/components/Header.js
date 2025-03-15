@@ -1,25 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { SunIcon, MoonIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
+import { useTranslation } from '../hooks/useTranslation';
+import LanguageSwitcher from './LanguageSwitcher';
 
 function Header({ darkMode, setDarkMode }) {
   const [activeSection, setActiveSection] = useState("");
   const [scrolled, setScrolled] = useState(false);
   const [showMore, setShowMore] = useState(false);
+  const { t } = useTranslation();
 
   const mainNavItems = [
-    { id: "home", label: "Home", bgClass: "bg-white dark:bg-gray-900" },
-    { id: "education", label: "Education", bgClass: "bg-gray-50 dark:bg-gray-800" },
-    { id: "experience", label: "Experience", bgClass: "bg-white dark:bg-gray-900" },
-    { id: "projects", label: "Projects", bgClass: "bg-gray-50 dark:bg-gray-800" },
-    { id: "skills", label: "Skills", bgClass: "bg-white dark:bg-gray-900" }
+    { id: "home", label: t('home'), bgClass: "bg-white dark:bg-gray-900" },
+    { id: "education", label: t('education'), bgClass: "bg-gray-50 dark:bg-gray-800" },
+    { id: "experience", label: t('experience'), bgClass: "bg-white dark:bg-gray-900" },
+    { id: "projects", label: t('projects'), bgClass: "bg-gray-50 dark:bg-gray-800" },
+    { id: "skills", label: t('skills'), bgClass: "bg-white dark:bg-gray-900" }
   ];
 
   const moreNavItems = [
-    { id: "workingstyle", label: "Working Style", bgClass: "bg-gray-50 dark:bg-gray-800" },
-    { id: "extracurricular", label: "Extracurricular", bgClass: "bg-white dark:bg-gray-900" },
-    { id: "hobbies", label: "Hobbies", bgClass: "bg-gray-50 dark:bg-gray-800" },
-    { id: "contact", label: "Contact", bgClass: "bg-white dark:bg-gray-900" }
+    { id: "workingstyle", label: t('workingStyle'), bgClass: "bg-gray-50 dark:bg-gray-800" },
+    { id: "extracurricular", label: t('extracurricular'), bgClass: "bg-white dark:bg-gray-900" },
+    { id: "hobbies", label: t('hobbies'), bgClass: "bg-gray-50 dark:bg-gray-800" },
+    { id: "contact", label: t('contact'), bgClass: "bg-white dark:bg-gray-900" }
   ];
 
   useEffect(() => {
@@ -102,7 +105,7 @@ function Header({ darkMode, setDarkMode }) {
                 }}
                 className="flex items-center px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-accent dark:hover:text-accent"
               >
-                More
+                {t('more')}
                 <ChevronDownIcon className={`h-4 w-4 ml-1 transition-transform ${showMore ? 'rotate-180' : ''}`} />
               </button>
 
@@ -137,18 +140,21 @@ function Header({ darkMode, setDarkMode }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Resume
+                {t('resume')}
               </a>
             </li>
           </motion.ul>
           
-          <button 
-            onClick={() => setDarkMode(!darkMode)}
-            className="ml-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
-            aria-label="Toggle dark mode"
-          >
-            {darkMode ? <SunIcon className="h-5 w-5" /> : <MoonIcon className="h-5 w-5" />}
-          </button>
+          <div className="flex items-center space-x-4">
+            <LanguageSwitcher />
+            <button 
+              onClick={() => setDarkMode(!darkMode)}
+              className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200"
+              aria-label="Toggle dark mode"
+            >
+              {darkMode ? <SunIcon className="h-5 w-5" /> : <MoonIcon className="h-5 w-5" />}
+            </button>
+          </div>
         </div>
       </nav>
     </header>
