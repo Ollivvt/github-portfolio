@@ -114,7 +114,28 @@ function Home() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.6 }}
             >
-              {t('introText')}
+              {t('introText').split(' ').map((word, index) => {
+                const wordLower = word.toLowerCase().replace(/[.,!?]$/, '');
+                let gradientClass = '';
+                
+                if (wordLower === 'computer' || wordLower === 'science') {
+                  gradientClass = 'from-cyan-300 to-blue-400';
+                } else if (wordLower === 'software' || wordLower === 'development') {
+                  gradientClass = 'from-fuchsia-300 to-purple-400';
+                } else if (wordLower === 'ai' || wordLower === '/' || wordLower === 'machine' || wordLower === 'learning') {
+                  gradientClass = 'from-emerald-300 to-teal-400';
+                }
+
+                const punctuation = word.match(/[.,!?]$/)?.[0] || '';
+
+                return gradientClass ? (
+                  <span key={index} className={`bg-gradient-to-r ${gradientClass} bg-clip-text text-transparent font-bold`}>
+                    {word.replace(/[.,!?]$/, '')}{punctuation}{' '}
+                  </span>
+                ) : (
+                  <span key={index}>{word}{' '}</span>
+                );
+              })}
             </motion.p>
 
             <motion.div 

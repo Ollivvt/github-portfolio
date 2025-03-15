@@ -136,7 +136,7 @@ function Header({ darkMode, setDarkMode }) {
             <li>
               <a
                 href="CV_Olivia_Tseng.pdf"
-                className="ml-4 bg-primary text-white dark:bg-accent dark:text-gray-900 px-4 py-2 rounded-lg shadow-md hover:bg-secondary dark:hover:bg-deep transition"
+                className="ml-4 mr-8 bg-primary text-white dark:bg-accent dark:text-gray-900 px-4 py-2 rounded-lg shadow-md hover:bg-secondary dark:hover:bg-deep transition"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -145,7 +145,7 @@ function Header({ darkMode, setDarkMode }) {
             </li>
           </motion.ul>
           
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-6">
             <LanguageSwitcher />
             <button 
               onClick={() => setDarkMode(!darkMode)}

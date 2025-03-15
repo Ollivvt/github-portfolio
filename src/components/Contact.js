@@ -4,7 +4,7 @@ import { EnvelopeIcon, PhoneIcon, LinkIcon } from '@heroicons/react/24/outline';
 import { useTranslation } from '../hooks/useTranslation';
 
 function Contact() {
-  const { t } = useTranslation();
+  const { t, currentLanguage } = useTranslation();
   const contactMethods = [
     {
       icon: <EnvelopeIcon className="h-6 w-6 text-accent" />,
@@ -16,8 +16,8 @@ function Contact() {
     {
       icon: <PhoneIcon className="h-6 w-6 text-accent" />,
       label: t('phoneLabel'),
-      value: "+12363383149",
-      href: "tel:+12363383149",
+      value: currentLanguage === 'zh-TW' ? "+886981812920" : "+12363383149",
+      href: currentLanguage === 'zh-TW' ? "tel:+886981812920" : "tel:+12363383149",
       isLink: true
     },
     {

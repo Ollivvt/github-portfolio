@@ -210,6 +210,11 @@ export const en = {
   linkedinLabel: 'LinkedIn',
   workTogetherTitle: "Let's Work Together",
   workTogetherDesc: "I'm currently open to new opportunities and collaborations in software development, AI, and machine learning projects.",
+  email: 'Email',
+  phone: 'Phone',
+  location: 'Location',
+  message: 'Message',
+  send: 'Send Message',
 
   // Footer
   copyright: '© 2024 All rights reserved.',

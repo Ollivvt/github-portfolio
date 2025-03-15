@@ -10,13 +10,13 @@ export const zhTW = {
   hobbies: '興趣',
   contact: '聯絡方式',
   more: '更多',
-  resume: '履歷',
+  resume: 'CV下載',
 
   // Home
   welcome: '歡迎來到我的作品集',
   building: '創造',
   reliable: '可靠的',
-  softwareSolutions: '軟體解決方案',
+  softwareSolutions: 'AI 軟體解決方案',
   typedGreeting: '您好，我是曾郁庭！',
   typedGraduate: 'CS碩士畢業生',
   typedML: '機器學習愛好者',
@@ -40,7 +40,7 @@ export const zhTW = {
   graduationYear: '畢業年份',
   ubcName: '英屬哥倫比亞大學 (UBC)',
   ubcDegree: 'MSc in Computer Science',
-  ubcScholarship: '獎學金: UBC Okanagan 研究獎學金',
+  ubcScholarship: '獎學金: UBC Okanagan 研究生獎學金',
   ubcModules: '主要課程: 進階演算法、應用機器學習、電腦視覺、電腦圖學、人機互動、Unity',
   ccuName: '國立中正大學 (CCU)',
   ccuDegree: '資訊管理學系',
@@ -185,14 +185,14 @@ export const zhTW = {
     '實現95%的人臉檢測準確率',
     '處理時間減少40%'
   ],
-  microsoftAchievements: ['團隊領導', 'Face API整合', '效能優化'],
+  microsoftAchievements: ['團隊領導', 'Face API整合', '效能提升'],
   ccuCareerTitle: '國立中正大學2021年校園徵才博覽會',
   ccuCareerPoints: [
     '協調5場大型交流活動，服務500多名學生',
     '有效管理9名成員的多元團隊',
     '學生參與度提升30%'
   ],
-  ccuCareerAchievements: ['活動管理', '團隊領導', '提升參與度'],
+  ccuCareerAchievements: ['活動管理', '團隊領導', '參與度增加'],
 
   // Hobbies
   hobbiesTitle: '興趣與愛好',
