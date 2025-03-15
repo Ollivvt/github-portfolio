@@ -151,7 +151,7 @@ export const en = {
 
   // Working Style
   workingStyleTitle: 'Working Style & Personality',
-  workingStyleSubtitle: 'Understanding how I approach work and collaborate with teams',
+  workingStyleSubtitle: 'Understanding how I approach work and collaborate with teams.',
   problemSolverTitle: 'Problem Solver',
   problemSolverDesc: 'I approach challenges analytically, breaking them down into manageable steps.',
   detailOrientedTitle: 'Detail-Oriented',
@@ -167,7 +167,7 @@ export const en = {
 
   // Extracurricular
   extracurricularTitle: 'Extracurricular Activities',
-  extracurricularSubtitle: 'Engaging in impactful activities that demonstrate leadership, technical expertise, and collaborative success',
+  extracurricularSubtitle: 'Engaging in impactful activities that demonstrate leadership, technical expertise, and collaborative success.',
   digitalHumanitiesTitle: 'National Digital Humanities Big Data Competition',
   digitalHumanitiesPoints: [
     'Achieved Top 12 placement among 100+ competing teams',
