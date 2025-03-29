@@ -27,7 +27,7 @@ export const zhTW = {
   mastersInCS: 'UBC CS 碩士',
   academicProjects: '專案',
   projectsCompleted: '完成3+個',
-  skillsList: '物件導向程式設計 / AWS / 機器學習',
+  skillsList: '機器學習 / 物件導向程式設計 / AWS',
   programmingLanguages: '程式語言',
   languagesList: 'Python / Java / C',
   scrollToExplore: '探索更多',
