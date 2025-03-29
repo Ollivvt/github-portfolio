@@ -7,6 +7,15 @@ function Projects() {
   const { t } = useTranslation();
   const projectList = [
     {
+      title: t('tripSmartTitle'),
+      description: t('tripSmartDesc'),
+      details: t('tripSmartDetails'),
+      link: "#",
+      tags: ["React", "Node.js", "Google Gemini AI", "Supabase", "Google Maps API"],
+      icon: <CloudIcon className="h-6 w-6" />,
+      color: "from-orange-500 to-red-600"
+    },
+    {
       title: t('aiEthnicityTitle'),
       description: t('aiEthnicityDesc'),
       details: t('aiEthnicityDetails'),
@@ -23,15 +32,6 @@ function Projects() {
       tags: ["D3.js", "Apache Spark", "Python", "Data Pipeline", "Visualization"],
       icon: <ChartBarIcon className="h-6 w-6" />,
       color: "from-green-500 to-teal-600"
-    },
-    {
-      title: t('orderingTitle'),
-      description: t('orderingDesc'),
-      details: t('orderingDetails'),
-      link: "https://github.com/Ollivvt/web-design-database",
-      tags: ["JavaScript", "PHP", "MySQL", "HTML/CSS", "Full Stack"],
-      icon: <CodeBracketIcon className="h-6 w-6" />,
-      color: "from-purple-500 to-pink-600"
     }
   ];
 

@@ -26,7 +26,7 @@ export const zhTW = {
   viewProjects: '查看專案',
   mastersInCS: 'UBC CS 碩士',
   academicProjects: '專案',
-  projectsCompleted: '完成5+個',
+  projectsCompleted: '完成3+個',
   skillsList: '物件導向程式設計 / AWS / 機器學習',
   programmingLanguages: '程式語言',
   languagesList: 'Python / Java / C',
@@ -41,7 +41,7 @@ export const zhTW = {
   ubcName: '英屬哥倫比亞大學 (UBC)',
   ubcDegree: 'MSc in Computer Science',
   ubcScholarship: '獎學金: UBC Okanagan 研究生獎學金',
-  ubcModules: '主要課程: 進階演算法、應用機器學習、電腦視覺、電腦圖學、人機互動、Unity',
+  ubcModules: '主要課程: 進階演算法、應用機器學習、電腦視覺、電腦圖學、人機互動、遊戲開發',
   ccuName: '國立中正大學 (CCU)',
   ccuDegree: '資訊管理學系',
   ccuAwards: '獎項: 2022年秋季書卷獎、管理學院國際菁英學分學程計畫第一名',
@@ -72,6 +72,14 @@ export const zhTW = {
   // Projects
   projectsTitle: '精選專案',
   viewProject: '查看專案',
+  tripSmartTitle: 'TripSmart – AI 智能旅遊行程規劃器',
+  tripSmartDesc: '一個利用人工智慧打造個人化旅遊體驗的全端旅遊規劃應用程式。',
+  tripSmartDetails: [
+    '使用React、Node.js、Google Gemini AI和Supabase開發全端旅遊規劃應用程式',
+    '開發AI驅動的行程生成功能，將行程規劃時間縮短70%',
+    '整合Google Maps API實現即時位置服務和地理編碼功能',
+    '專案完成度：85% - 核心功能已實現並測試完成'
+  ],
   aiEthnicityTitle: '醫療影像中的AI種族特徵分析',
   aiEthnicityDesc: '開發先進的機器學習模型來分析醫療影像數據集中的種族特徵，提升醫療公平性研究。',
   aiEthnicityDetails: [
@@ -85,13 +93,6 @@ export const zhTW = {
     '使用Python和Apache Spark建立穩健的數據處理管道',
     '使用D3.js設計直觀的互動式儀表板',
     '實現即時過濾和動態視覺化更新'
-  ],
-  orderingTitle: '網頁訂購系統',
-  orderingDesc: '具有即時追蹤和管理功能的全端訂購平台。',
-  orderingDetails: [
-    '使用現代JavaScript和CSS框架開發響應式前端',
-    '優化MySQL查詢，處理時間提升40%',
-    '建立全面的管理儀表板，用於訂單管理和分析'
   ],
 
   // Skills
@@ -176,21 +177,18 @@ export const zhTW = {
   digitalHumanitiesPoints: [
     '在100多支參賽隊伍中獲得前12名',
     '領導系統架構設計和提案開發',
-    '與跨職能團隊合作進行簡報'
   ],
   digitalHumanitiesAchievements: ['前12名決賽入圍者', '系統架構設計', '技術提案負責人'],
   microsoftTitle: '微軟實習未來生涯體驗計畫 (2022 Coding Angels)',
   microsoftPoints: [
     '帶領4名小組成員進行實作討論',
-    '實現95%的人臉檢測準確率',
-    '處理時間減少40%'
+    '實現89%的人臉檢測準確率',
   ],
   microsoftAchievements: ['團隊領導', 'Face API整合', '效能提升'],
   ccuCareerTitle: '國立中正大學2021年校園徵才博覽會',
   ccuCareerPoints: [
     '協調5場大型交流活動，服務500多名學生',
     '有效管理9名成員的多元團隊',
-    '學生參與度提升30%'
   ],
   ccuCareerAchievements: ['活動管理', '團隊領導', '參與度增加'],
 

@@ -11,7 +11,6 @@ function Extracurricular() {
       bulletPoints: [
         { icon: FaTrophy, text: t('digitalHumanitiesPoints')[0] },
         { icon: FaCog, text: t('digitalHumanitiesPoints')[1] },
-        { icon: FaHandshake, text: t('digitalHumanitiesPoints')[2] }
       ],
       image: "images/competition.jpg",
       achievements: t('digitalHumanitiesAchievements')
@@ -21,7 +20,6 @@ function Extracurricular() {
       bulletPoints: [
         { icon: FaUsers, text: t('microsoftPoints')[0] },
         { icon: FaChartLine, text: t('microsoftPoints')[1] },
-        { icon: FaClock, text: t('microsoftPoints')[2] }
       ],
       image: "images/microsoft.jpg",
       achievements: t('microsoftAchievements')
@@ -31,7 +29,6 @@ function Extracurricular() {
       bulletPoints: [
         { icon: FaUserFriends, text: t('ccuCareerPoints')[0] },
         { icon: FaTasks, text: t('ccuCareerPoints')[1] },
-        { icon: FaChartPie, text: t('ccuCareerPoints')[2] }
       ],
       image: "images/careerfair.jpg",
       achievements: t('ccuCareerAchievements')

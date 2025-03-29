@@ -24,9 +24,9 @@ export const en = {
   introText: 'A fresh Master\'s graduate in Computer Science at UBC, with a strong foundation in Software Development and AI / Machine Learning. Excited to apply my academic knowledge to real-world challenges and grow as a professional.',
   letsConnect: "Let's Connect",
   viewProjects: 'View Projects',
-  mastersInCS: "Master's in CS",
+  mastersInCS: "MSc in Computer Science",
   academicProjects: 'Projects',
-  projectsCompleted: '5+ Completed',
+  projectsCompleted: '3+ Completed',
   skillsList: 'OOP / AWS / CI/CD / ML',
   programmingLanguages: 'Languages',
   languagesList: 'Python / Java / C',
@@ -42,7 +42,7 @@ export const en = {
   ccuName: 'National Chung Cheng University (CCU)',
   ubcDegree: "Master's Degree in Computer Science",
   ubcScholarship: "Scholarship: UBC Okanagan Graduate Research Scholarships",
-  ubcModules: "Key Modules: Advanced Algorithms, Applied Machine Learning, Computer Vision, Computer Graphics, HCI, Unity",
+  ubcModules: "Key Modules: Advanced Algorithms, Applied Machine Learning, Computer Vision, Computer Graphics, HCI, Game Developmentß",
   ccuDegree: "Bachelor's Degree in Information Management",
   ccuAwards: "Awards: Fall 2022 Dean's List, 1st Place in CCU Global Elite Program",
   ccuModules: "Key Modules: Data Structures, SQL Database, System Analysis & Design, Computer Networks, Web App Development",
@@ -68,12 +68,20 @@ export const en = {
   // Projects
   projectsTitle: 'Featured Projects',
   viewProject: 'View Project',
+  tripSmartTitle: 'TripSmart – AI-Powered Travel Itinerary Planner',
+  tripSmartDesc: 'A full-stack travel planning application leveraging AI to create personalized travel experiences.',
+  tripSmartDetails: [
+    'Developed a full-stack travel planning app using React, Node.js, Google Gemini AI, and Supabase',
+    'Engineered AI-driven itinerary generation, improving trip planning time by 70%',
+    'Integrated Google Maps API for real-time location services and geocoding',
+    'Project completion: 85% - Core features implemented and tested'
+  ],
   aiEthnicityTitle: 'AI Ethnicity in Medical Images',
   aiEthnicityDesc: 'Developed sophisticated machine learning models to analyze racial features in medical imaging datasets, enhancing healthcare equity research.',
   aiEthnicityDetails: [
     'Implemented and fine-tuned EfficientNet and DinoV2 models for high-accuracy feature detection',
     'Deployed scalable solution on AWS using EC2 instances and S3 storage',
-    'Processed and analyzed over 550K medical images with 94% accuracy'
+    'Processed and analyzed over 550K medical images'
   ],
   tourismTitle: 'Tourism Data Visualization Platform',
   tourismDesc: 'Created an end-to-end data pipeline and interactive visualization platform for large-scale tourism data analysis.',
@@ -81,13 +89,6 @@ export const en = {
     'Built robust data pipeline using Python and Apache Spark for efficient processing',
     'Designed interactive dashboards with D3.js for intuitive data exploration',
     'Implemented real-time filtering and dynamic visualization updates'
-  ],
-  orderingTitle: 'Web-Based Ordering System',
-  orderingDesc: 'Full-stack ordering platform with real-time tracking and administrative capabilities.',
-  orderingDetails: [
-    'Developed responsive frontend using modern JavaScript and CSS frameworks',
-    'Implemented optimized MySQL queries, achieving 40% faster processing time',
-    'Built comprehensive admin dashboard for order management and analytics'
   ],
 
   // Skills
@@ -172,23 +173,20 @@ export const en = {
   digitalHumanitiesPoints: [
     'Achieved Top 12 placement among 100+ competing teams',
     'Led system architecture design and proposal development',
-    'Collaborated with cross-functional team for presentation'
   ],
   digitalHumanitiesAchievements: ['Top 12 Finalist', 'System Architecture Design', 'Technical Proposal Lead'],
   microsoftTitle: 'Microsoft Intern Program (2022 Coding Angels)',
   microsoftPoints: [
-    'Spearheaded development team of 4 engineers',
+    'Spearheaded development team of 4 members',
     'Achieved 95% accuracy in facial detection',
-    'Reduced processing time by 40%'
   ],
   microsoftAchievements: ['Team Lead', 'Face API Integration', 'Performance Optimization'],
   ccuCareerTitle: 'CCU Career Fair 2021',
   ccuCareerPoints: [
     'Coordinated 5 major networking events for 500+ students',
     'Managed diverse team of 9 members',
-    'Increased student participation by 30%'
   ],
-  ccuCareerAchievements: ['Event Management', 'Team Leadership', 'Increased Engagement'],
+  ccuCareerAchievements: ['Event Management', 'Team Leadership', 'Cross-functional Collaboration'],
 
   // Hobbies
   hobbiesTitle: 'Hobbies & Interests',
