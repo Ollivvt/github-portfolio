@@ -72,13 +72,13 @@ export const zhTW = {
   // Projects
   projectsTitle: '精選專案',
   viewProject: '查看專案',
-  tripSmartTitle: 'TripSmart – AI 智能旅遊行程規劃器',
-  tripSmartDesc: '一個利用人工智慧打造個人化旅遊體驗的全端旅遊規劃應用程式。',
+  tripSmartTitle: 'Smart Travel Genie – AI智慧旅遊精靈',
+  tripSmartDesc: '在Google x Kaggle GenAI Intensive（2025）中開發的進階旅遊規劃解決方案，結合few-shot LLM提示工程和互動式地圖功能。',
   tripSmartDetails: [
-    '使用React、Node.js、Google Gemini AI和Supabase開發全端旅遊規劃應用程式',
-    '開發AI驅動的行程生成功能，將行程規劃時間縮短70%',
-    '整合Google Maps API實現即時位置服務和地理編碼功能',
-    '專案完成度：85% - 核心功能已實現並測試完成'
+    '設計few-shot提示系統，運用Gemini API實現情境感知的行程建議',
+    '開發AI應用程式（Streamlit + Python），具備動態會話管理和結構化JSON解析',
+    '以React, Node.js和Google Maps API開發網頁版本，實現互動式位置視覺化',
+    '整合Supabase實現用戶數據管理和安全的API金鑰處理'
   ],
   aiEthnicityTitle: '醫療影像中的AI種族特徵分析',
   aiEthnicityDesc: '開發先進的機器學習模型來分析醫療影像數據集中的種族特徵，提升醫療公平性研究。',
@@ -86,13 +86,6 @@ export const zhTW = {
     '實現並微調EfficientNet和DinoV2模型以實現高精度特徵檢測',
     '使用AWS EC2實例和S3存儲部署可擴展解決方案',
     '處理和分析超過55萬張醫療影像，準確率達94%'
-  ],
-  tourismTitle: '旅遊大數據視覺化平台',
-  tourismDesc: '建立端到端數據管道和互動式視覺化平台，用於大規模旅遊數據分析。',
-  tourismDetails: [
-    '使用Python和Apache Spark建立穩健的數據處理管道',
-    '使用D3.js設計直觀的互動式儀表板',
-    '實現即時過濾和動態視覺化更新'
   ],
 
   // Skills
@@ -220,4 +213,4 @@ export const zhTW = {
 
   // Footer
   copyright: '© 2024 版權所有',
-}; 
+};

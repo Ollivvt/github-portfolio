@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { CodeBracketIcon, ChartBarIcon, CloudIcon, CommandLineIcon, CpuChipIcon, BeakerIcon } from '@heroicons/react/24/outline';
+import { CloudIcon, CpuChipIcon, GlobeAltIcon } from '@heroicons/react/24/outline';
 import { useTranslation } from '../hooks/useTranslation';
 
 function Projects() {
@@ -10,8 +10,19 @@ function Projects() {
       title: t('tripSmartTitle'),
       description: t('tripSmartDesc'),
       details: t('tripSmartDetails'),
-      link: "#",
-      tags: ["React", "Node.js", "Google Gemini AI", "Supabase", "Google Maps API"],
+      links: [
+        {
+          url: "https://travel-buddy-gemini-ollivvt.streamlit.app/",
+          label: "AI App",
+          icon: <CloudIcon className="h-5 w-5" />
+        },
+        {
+          url: "https://github.com/Ollivvt/travel-smart-ai",
+          label: "Web App",
+          icon: <GlobeAltIcon className="h-5 w-5" />
+        }
+      ],
+      tags: ["Python", "React", "Node.js", "Streamlit", "Google Gemini API", "Supabase"],
       icon: <CloudIcon className="h-6 w-6" />,
       color: "from-orange-500 to-red-600"
     },
@@ -24,15 +35,6 @@ function Projects() {
       icon: <CpuChipIcon className="h-6 w-6" />,
       color: "from-blue-500 to-indigo-600"
     },
-    {
-      title: t('tourismTitle'),
-      description: t('tourismDesc'),
-      details: t('tourismDetails'),
-      link: "https://github.com/martin0310/Travel_Vision",
-      tags: ["D3.js", "Apache Spark", "Python", "Data Pipeline", "Visualization"],
-      icon: <ChartBarIcon className="h-6 w-6" />,
-      color: "from-green-500 to-teal-600"
-    }
   ];
 
   const [activeProject, setActiveProject] = useState(null);
@@ -46,7 +48,7 @@ function Projects() {
           </h2> 
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {projectList.map((project, index) => (
             <motion.div
               key={index}
@@ -66,12 +68,12 @@ function Projects() {
               {/* Header */}
               <div className={`p-6 bg-gradient-to-r ${project.color} text-white`}>
                 <div className="flex items-center mb-4">
-                  <div className="p-2 bg-white/10 rounded-lg">
+                  <div className="p-2 bg-white/10 rounded-lg mr-3">
                     {project.icon}
                   </div>
+                  <h3 className="text-xl font-bold">{project.title}</h3>
                 </div>
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
-                <p className="text-white/90 text-sm">{project.description}</p>
+                <p className="text-white/90">{project.description}</p>
               </div>
 
               <div className="p-6 flex-1 flex flex-col">
@@ -100,20 +102,42 @@ function Projects() {
                   ))}
                 </div>
 
-                {/* Link */}
-                <motion.a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-auto inline-flex items-center text-primary dark:text-accent font-medium hover:underline"
-                  whileHover={{ x: 5 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  {t('viewProject')}
-                  <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </motion.a>
+                {/* Links */}
+                <div className="mt-auto space-x-4">
+                  {project.links ? (
+                    project.links.map((link, idx) => (
+                      <motion.a
+                        key={idx}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-primary dark:text-accent font-medium hover:underline"
+                        whileHover={{ x: 5 }}
+                        transition={{ duration: 0.2 }}
+                      >
+                        {link.icon}
+                        <span className="ml-2">{link.label}</span>
+                        <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </motion.a>
+                    ))
+                  ) : (
+                    <motion.a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-primary dark:text-accent font-medium hover:underline"
+                      whileHover={{ x: 5 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      {t('viewProject')}
+                      <svg className="w-5 h-5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </motion.a>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}

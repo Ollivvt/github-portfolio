@@ -68,27 +68,20 @@ export const en = {
   // Projects
   projectsTitle: 'Featured Projects',
   viewProject: 'View Project',
-  tripSmartTitle: 'TripSmart – AI-Powered Travel Itinerary Planner',
-  tripSmartDesc: 'A full-stack travel planning application leveraging AI to create personalized travel experiences.',
+  tripSmartTitle: 'Smart Travel Genie – GenAI-Powered Travel Planner',
+  tripSmartDesc: 'Advanced travel planning solution developed during Google x Kaggle GenAI Intensive (2025), combining few-shot LLM prompting with interactive mapping capabilities.',
   tripSmartDetails: [
-    'Developed a full-stack travel planning app using React, Node.js, Google Gemini AI, and Supabase',
-    'Engineered AI-driven itinerary generation, improving trip planning time by 70%',
-    'Integrated Google Maps API for real-time location services and geocoding',
-    'Project completion: 85% - Core features implemented and tested'
+    'Engineered few-shot prompting system with Gemini API for context-aware itinerary suggestions',
+    'Built AI app (Streamlit + Python) with dynamic session state and structured JSON response parsing',
+    'Developed web app with React, Node.js, and Google Maps API for interactive location visualization',
+    'Implemented Supabase integration for user data and secure API key management'
   ],
   aiEthnicityTitle: 'AI Ethnicity in Medical Images',
   aiEthnicityDesc: 'Developed sophisticated machine learning models to analyze racial features in medical imaging datasets, enhancing healthcare equity research.',
   aiEthnicityDetails: [
     'Implemented and fine-tuned EfficientNet and DinoV2 models for high-accuracy feature detection',
     'Deployed scalable solution on AWS using EC2 instances and S3 storage',
-    'Processed and analyzed over 550K medical images'
-  ],
-  tourismTitle: 'Tourism Data Visualization Platform',
-  tourismDesc: 'Created an end-to-end data pipeline and interactive visualization platform for large-scale tourism data analysis.',
-  tourismDetails: [
-    'Built robust data pipeline using Python and Apache Spark for efficient processing',
-    'Designed interactive dashboards with D3.js for intuitive data exploration',
-    'Implemented real-time filtering and dynamic visualization updates'
+    'Processed and analyzed over 550K medical images on Linux'
   ],
 
   // Skills
@@ -216,4 +209,4 @@ export const en = {
 
   // Footer
   copyright: '© 2024 All rights reserved.',
-}; 
+};
