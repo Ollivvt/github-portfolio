@@ -27,7 +27,7 @@ export const en = {
   mastersInCS: "MSc in Computer Science",
   academicProjects: 'Projects',
   projectsCompleted: '3+ Completed',
-  skillsList: 'ML / OOP / AWS / CI/CD',
+  skillsList: 'SW Dev / AI&ML / AWS',
   programmingLanguages: 'Languages',
   languagesList: 'Python / Java / C',
   scrollToExplore: 'Scroll to explore',
