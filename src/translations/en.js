@@ -17,7 +17,7 @@ export const en = {
   building: 'Building',
   reliable: 'Reliable',
   softwareSolutions: 'Software Solutions',
-  typedGreeting: "Hi, I'm Olivia Tseng!",
+  typedGreeting: "Hi, I'm Olivia (Yu-Ting) Tseng!",
   typedGraduate: 'Recent CS Graduate',
   typedML: 'ML Enthusiast',
   typedEager: 'Eager to Learn & Grow',

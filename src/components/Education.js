@@ -9,7 +9,7 @@ function Education() {
       {
         school: t('ubcName'),
         degree: t('ubcDegree'),
-        date: "SEP 2023 – MAY 2025",
+        date: "SEP 2023 – JUN 2025",
         details: [
           t('ubcScholarship'),
           t('ubcModules'),
