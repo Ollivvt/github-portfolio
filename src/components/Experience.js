@@ -7,20 +7,19 @@ function Experience() {
     const { t } = useTranslation();
     const experienceList = [
         {
-            position: t('outlierPosition'),
-            company: t('outlierCompany'),
-            date: "OCT 2024 – Present",
-            location: t('remote'),
-            type: t('partTime'),
+            position: t('metaPosition'),
+            company: t('metaCompany'),
+            date: "SEP 2025 – Present",
+            location: t('ukLocation'),
+            type: t('fullTime'),
             current: true
         },
         {
             position: t('bcCancerPosition'),
             company: t('bcCancerCompany'),
-            date: "SEP 2023 – Present",
+            date: "SEP 2023 – AUG 2025",
             location: t('kelownaLocation'),
-            type: t('internship'),
-            current: true
+            type: t('internship')
         },
         {
             position: t('mirdcPosition'),
